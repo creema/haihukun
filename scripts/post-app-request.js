@@ -18,9 +18,9 @@ module.exports = function(robot) {
     replyMessage += '\n';
     replyMessage += '\n';
     replyMessage += '-- DISTRIBUTION INFO --\n';
-    replyMessage += 'BRANCH=for_1.6.13\n';
+    replyMessage += 'BRANCH=' + process.env.HUBOT_HAIHUKUN_FORMAT_ITEM1  + '\n';
     replyMessage += 'ENVIRONMENT-MODE=debug\n';
-    replyMessage += 'API-DOMAIN=front.cr2-xx.akamaru-dev.com\n';
+    replyMessage += 'API-DOMAIN=' + process.env.HUBOT_HAIHUKUN_FORMAT_ITEM2  + '\n';
     replyMessage += 'DEVELOPER-ID=xx\n';
     replyMessage += '-----------------------\n';
     res.reply(replyMessage);
